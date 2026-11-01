@@ -1,4 +1,4 @@
-# Day 01 · Points | Lighthouses of Spain 🔅
+# Day 01 - Points | Lighthouses of Spain 🔅
 
 Revisiting my first map from the 2025 challenge, this time with
 Python and animated lights.
