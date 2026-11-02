@@ -15,6 +15,7 @@ tutorials that inspired it.
 | Day | Theme | Map | Tools | Project |
 |-----|-------|-----|-------|---------|
 | 01 | Points | Lighthouses of Spain | Python | [View project](./day01-points/) |
+| 02 | Lines | Augsburg through its streets | Python | [View project](./day02-lines/) |
 
 This table will be updated as the challenge progresses.
 
