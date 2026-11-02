@@ -1,54 +1,57 @@
-# Augsburg through its streets
-## Day 02 - Lines · #30DayMapChallenge 2026
+# Day 02 - Lines | Augsburg through its streets
 
-A portrait of Augsburg through its OpenStreetMap roads, pedestrian
-routes, paths and trails, created with Python and OSMnx.
+Revisiting Augsburg after mapping driving times for Day 26 of
+the 2025 challenge, this time exploring its street network with Python.
 
-**Map by Maria Victoria León Parra**
-
-## Final map
-
-![Augsburg through its streets](output/day02_lines_augsburg.png)
+The map combines OpenStreetMap roads, pedestrian routes, paths
+and trails with the municipal boundary.
 
 ## Tools
 
-Python · OSMnx · GeoPandas · Matplotlib
+Python, OSMnx, GeoPandas and Matplotlib.
 
-## How to run
+## Workflow
 
-1. Install the required packages:
+1. Retrieve the street network from OpenStreetMap.
+2. Save a local GraphML copy for subsequent runs.
+3. Retrieve the municipal boundary.
+4. Project both layers to EPSG:32632.
+5. Style the streets and boundary, then add a north arrow and scale bar.
+6. Export a static PNG.
 
-   pip install osmnx matplotlib jupyter
-
-2. Open `day02_lines_augsburg.ipynb`.
-3. Run the cells in order.
+## Local data
 
 No local input files are required for the first run.
-The street network and municipal boundary are downloaded from
-OpenStreetMap. An internet connection is required.
+An internet connection is needed to download the OpenStreetMap data.
 
-The notebook creates `data/` and `output/` directories.
-The street network is cached locally as
-`data/augsburg_all_streets.graphml`.
+The notebook saves the street network in a `data/` folder:
 
-## Sources and limitations
+- `augsburg_all_streets.graphml`
 
-- Street network and municipal boundary:
-  © OpenStreetMap contributors, ODbL.
-  https://www.openstreetmap.org/copyright
-- Workflow inspiration:
-  Milan Janosov's Visualizing Road Networks tutorial.
-  https://milanjanosov.substack.com/p/milans-data-stories-016-visualizing
+Subsequent runs load this local copy instead of downloading
+the network again. Cached data is not included in this repository.
 
-OpenStreetMap coverage may be incomplete. The network uses
-`network_type="all"` and does not imply access for all transport modes.
+## Sources and inspiration
 
-All streets use the same color. They do not represent traffic levels,
+- Data: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
+- Tutorial: [Visualizing Road Networks by Milan Janosov](https://milanjanosov.substack.com/p/milans-data-stories-016-visualizing).
+
+## Notes
+
+OpenStreetMap coverage may be incomplete. The network is retrieved
+using `network_type="all"` and does not imply access for all
+transport modes.
+
+All streets use the same color and do not represent traffic levels,
 travel times or road classifications. Some segments may extend
 slightly beyond the municipal boundary.
 
 Both layers are projected to EPSG:32632. The scale bar uses meters,
 and the north arrow indicates grid north.
 
-Local environments, cached data and IDE configuration files
-are excluded from this repository.
+## Author
+
+María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/) ·
+[Back to the challenge](../README.md)
