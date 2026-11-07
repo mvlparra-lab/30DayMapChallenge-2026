@@ -2,8 +2,6 @@
 
 How much of each country’s land area is covered by forests? This map shows the percentage for 2024, with darker greens indicating a higher share of forest area.
 
-![A World of Forests](./Day07_A_World_of_Forests.png)
-
 ## Tools
 
 Python, pandas, GeoPandas, Matplotlib and pyproj.
