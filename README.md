@@ -17,6 +17,7 @@ tutorials that inspired it.
 | 01 | Points | Lighthouses of Spain | Python | [View project](./day01-points/) |
 | 02 | Lines | Augsburg through its streets | Python | [View project](./day02-lines/) |
 | 03 | Polygons | Olive Landscapes of Córdoba | Python | [View project](https://github.com/mvlparra-lab/30DayMapChallenge-2026/tree/main/day03-polygons) |
+| 07 | 10 Minute Map | A World of Forests | Python | [View project](./day07-10-minute-map/) |
 
 This table will be updated as the challenge progresses.
 
