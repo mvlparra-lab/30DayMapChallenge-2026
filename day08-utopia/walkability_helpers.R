@@ -17,7 +17,7 @@ script_path <- normalizePath(
   mustWork = TRUE
 )
 project_dir <- normalizePath(
-  file.path(dirname(script_path), ".."),
+  dirname(script_path),
   winslash = "/",
   mustWork = TRUE
 )
