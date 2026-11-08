@@ -19,6 +19,7 @@ tutorials that inspired it.
 | 03 | Polygons | Olive Landscapes of Córdoba | Python | [View project](https://github.com/mvlparra-lab/30DayMapChallenge-2026/tree/main/day03-polygons) |
 | 07 | 10 Minute Map | A World of Forests | Python | [View project](./day07-10-minute-map/) |
 | 08 | Utopia | Is Augsburg a 15-minute city? | R | [View project](./day08-utopia/) |
+| 09 | Urban-rural | Baena, Town & Countryside | Python, QGIS | [View project](./day09-urban-rural/) |
 
 This table will be updated as the challenge progresses.
 
