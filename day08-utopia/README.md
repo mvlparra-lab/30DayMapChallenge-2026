@@ -1,6 +1,6 @@
 # Day 08 - Utopia | Is Augsburg a 15-minute city?
 
-Augsburg ranked second for life satisfaction among 40 major German cities in the 2026 SKL Glücksatlas. For the Utopia theme, I wanted to look at one aspect of everyday life in the city where I live: how easy is it to reach essential services on foot?
+Augsburg ranked second for life satisfaction among 40 major German cities in the 2026 SKL Glücksatlas. For the Utopia theme, I wanted to explore how easy it is to reach everyday services on foot in the city where I live.
 
 ## Tools
 
@@ -9,27 +9,41 @@ Augsburg ranked second for life satisfaction among 40 major German cities in the
 
 ## Workflow
 
-1. Create a 100 m grid for residential areas within Augsburg.
-2. Identify supermarkets, public park entrances, schools, pharmacies and public transport stops.
-3. Estimate walking times from each grid cell to the nearest destination in each category using the street network.
-4. Map whether each cell has access to all five services within a 15-minute walk.
+1. Run `01_prepare_inputs.R` to create a 100 m residential grid and identify five types of destinations: supermarkets, public park entrances, schools, pharmacies and public transport stops.
+2. Run `02_test_routing.R` to check the walking routes on a sample of 20 cells.
+3. Run `03_run_full_city.R` to calculate the walking time to the nearest mapped destination in each category and classify the cells using the 15-minute threshold.
+4. Open `results/augsburg_walkability.gpkg` in QGIS to map the `walkability_grid` layer.
+
+Run these commands from `day08-utopia/` with R, the `sf` and `r5r` packages, and Java 21 installed. The first routing run needs internet access to download R5 if it is not already cached.
+
+```sh
+Rscript 01_prepare_inputs.R
+Rscript 02_test_routing.R
+Rscript 03_run_full_city.R
+```
 
 ## Local data
 
-The analysis uses an Augsburg municipal boundary, a residential grid, and walking network and destination data from OpenStreetMap.
+The scripts expect these inputs in `../augsburg_15_minute_city/data/`, relative to `day08-utopia/`:
 
-The R scripts and instructions are in the [technical README](./augsburg_walkability/README.md).
+- `Augsburg_boundary.geojson`
+- `Augsburg.osm.pbf`
+- `feature_extract/Augsburg-geopackage/Augsburg.gpkg`
+
+The workflow generates the residential grid and saves the GeoPackage, cell-level travel times and summary counts in `results/`.
 
 ## Sources and inspiration
 
-- [Nat Henry’s 15-minute city tutorial](https://henryspatialanalysis.com/news/tutorial-15-minute-city-interactive-map.html)
-- [OpenStreetMap](https://www.openstreetmap.org/copyright)
+- [Nathaniel Henry’s 15-minute city tutorial](https://henryspatialanalysis.com/news/tutorial-15-minute-city-interactive-map.html)
+- [Original `city_walkability` code](https://github.com/henryspatialanalysis/city_walkability), copyright © 2023 Henry Spatial Analysis, released under the [MIT License](./LICENSE)
+- [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 - [SKL Glücksatlas 2026: Augsburg](https://www.skl-gluecksatlas.de/artikel/staedteranking-2026/augsburg.html)
 
 ## Notes
 
-- All five services were within a 15-minute walk of 56.2% of the residential grid cells analysed. Each cell carries equal weight in this calculation.
-- The analysis includes nearby destinations outside the municipal boundary to account for services accessible from the edges of the city.
+- All five services were within a 15-minute walk of 56.2% of the residential grid cells analysed. Each cell carries equal weight.
+- The analysis includes mapped destinations up to 2.5 km outside Augsburg’s municipal boundary.
+- If a usable route was unavailable for any category, the cell was classified as `Insufficient data`.
 
 ## Author
 
