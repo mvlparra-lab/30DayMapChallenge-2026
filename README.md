@@ -20,6 +20,7 @@ tutorials that inspired it.
 | 07 | 10 Minute Map | A World of Forests | Python | [View project](./day07-10-minute-map/) |
 | 08 | Utopia | Is Augsburg a 15-minute city? | R | [View project](./day08-utopia/) |
 | 09 | Urban-rural | Baena, Town & Countryside | Python | [View project](./day09-urban-rural/) |
+| 10 | Prompting only | Augsburg, Where Water Runs | Python · Codex | [View project](./day10-prompting-only/) |
 
 This table will be updated as the challenge progresses.
 
