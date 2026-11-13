@@ -1,0 +1,4 @@
+osmnx==2.1.1
+folium==0.20.0
+ipykernel>=6,<8
+mapbox-vector-tile==2.2.0
