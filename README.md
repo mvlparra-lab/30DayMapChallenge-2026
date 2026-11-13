@@ -22,6 +22,7 @@ tutorials that inspired it.
 | 09 | Urban-rural | Baena, Town & Countryside | Python | [View project](./day09-urban-rural/) |
 | 10 | Prompting only | Augsburg, Where Water Runs | Python · Codex | [View project](./day10-prompting-only/) |
 | 12 | Power | Spain’s High-Voltage Grid | Python | [View project](./day12-power/) |
+| 13 | Interactions | Cabo de Palos & La Manga | Python | [View project](./day13-interactions/) |
 
 This table will be updated as the challenge progresses.
 
