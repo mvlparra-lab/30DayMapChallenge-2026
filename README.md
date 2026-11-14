@@ -23,6 +23,7 @@ tutorials that inspired it.
 | 10 | Prompting only | Augsburg, Where Water Runs | Python · Codex | [View project](./day10-prompting-only/) |
 | 12 | Power | Spain’s High-Voltage Grid | Python | [View project](./day12-power/) |
 | 13 | Interactions | Cabo de Palos & La Manga | Python | [View project](./day13-interactions/) |
+| 14 | Borgesian map | Cartagena in 1799 | Python | [View project](./day14-Borgesian-map/) |
 
 This table will be updated as the challenge progresses.
 
