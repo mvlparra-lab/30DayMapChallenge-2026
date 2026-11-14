@@ -1,0 +1,7 @@
+fonttools
+ipykernel
+matplotlib
+nbconvert
+numpy
+Pillow
+pymupdf
