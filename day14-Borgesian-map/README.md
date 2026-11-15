@@ -1,8 +1,5 @@
 # Day 14 | Cartagena in 1799
 
-A small square in Cartagena's historic centre in Juan José Ordovás’s 1799 plan, with the full plan and a photograph of the Cartagena model above it.
-
-[View the map](linkedin.png) · [Download the print PDF](output/day14_borgesian_map_print.pdf)
 
 ## Tools
 
