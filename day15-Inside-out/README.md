@@ -2,8 +2,6 @@
 
 Inside out · 30DayMapChallenge 2026
 
-M19 is a surveyed cave on Slovenia’s Migovec Plateau (Slovenian cave register no. 8285). The map shows the reconstructed empty space beneath its entrance as an orthographic view, with a matching true-north plan. [Final map](output/day15_inside_out_cave.png) · [Executed notebook](day15_inside_out_cave.ipynb)
-
 ## Tools
 
 [Therion 6.4.1](https://therion.speleo.sk/download.php) built the walls and station exports. Python 3.11+, Jupyter, NumPy, Matplotlib, Pillow and the bundled Roboto fonts compose and verify the map. This survey compiles with Therion’s internal station processing. A portable build may mention that Cavern is absent in its startup check.
