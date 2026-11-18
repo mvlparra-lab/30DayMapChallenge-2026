@@ -1,0 +1,9 @@
+name: day18-null
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pygmt=0.17
+  - gmt=6.6
+  - ghostscript
+  - pillow
