@@ -1,0 +1,86 @@
+# Day 18 | How Much Life Is on Mars?
+
+NULL · #30DayMapChallenge 2026
+
+The map asks how many living organisms there are per square kilometre on
+Mars. No observations support a density estimate anywhere on the planet.
+The single legend entry applies to the entire Martian surface.
+
+[Final map](outputs/day18-null-mars.png)
+
+## Tools
+
+Python, PyGMT, GMT, Ghostscript and Pillow. The bundled Roboto Regular and
+Bold fonts are used throughout the layout.
+
+## Workflow
+
+1. Load the global Mars Orbiter Laser Altimeter (MOLA) grid with
+   `pygmt.datasets.load_mars_relief()`. The AGU24 workshop's section 0.1 starts
+   at `01d` (1°) and plots the grid in Mollweide with `Figure.grdimage()`.
+2. Keep the workshop's global relief and Mollweide workflow. Use a 15
+   arc-minute (0.25°) grid in the final render to retain more relief detail.
+   Centre the map on 180°E and draw all 360° of longitude and both poles.
+   Use muted Martian tones and soft hillshade for orientation and omit the
+   workshop's elevation colour bar.
+3. Place official names from the Gazetteer's current Mars control network.
+   The CSV preserves planetocentric latitude and positive-east longitude
+   in the 0–360° convention. MOLA also uses degrees east. The script wraps
+   the longitudes relative to the central meridian and applies the same
+   spherical Mollweide projection to the label anchors.
+4. Add a north arrow and a 2,000 km bar calibrated at the equator. The
+   complete equatorial map width represents one circumference at the IAU
+   Mars equatorial radius of 3,396.19 km.
+5. Compose the print layout with the global NULL legend, source credits
+   and challenge footer.
+
+## Local data and reproduction
+
+The [toponyms CSV](data/mars-toponyms.csv) stores the catalogue centres,
+Gazetteer feature IDs and label offsets in millimetres. The first run
+downloads MOLA relief into the GMT cache. Subsequent runs can reuse it.
+
+From the project folder, run:
+
+```sh
+conda env create -f environment.yml
+conda activate day18-null
+python day18-null.py
+```
+
+To reproduce the tutorial-resolution comparison, run
+`python day18-null.py --resolution 01d`. Run the command without the flag
+afterward to restore the 15 arc-minute output at the same path.
+
+## Sources and inspiration
+
+- **Tutorial.** GMT/PyGMT AGU24 workshop, Tutorial 5, section 0.1.
+  [2-D map view](https://www.generic-mapping-tools.org/agu24workshop/tut05_topography.html#d-map-view)
+- **Relief.** NASA Mars Global Surveyor, Mars Orbiter Laser Altimeter.
+  [USGS MOLA DEM](https://astrogeology.usgs.gov/search/map/mars_mgs_mola_dem_463m) ·
+  [PyGMT MOLA grids](https://www.pygmt.org/v0.17.0/api/generated/pygmt.datasets.load_mars_relief.html)
+- **Place names.** IAU/USGS Gazetteer of Planetary Nomenclature.
+  [Olympus Mons](https://planetarynames.wr.usgs.gov/Feature/4453) ·
+  [Elysium Mons](https://planetarynames.wr.usgs.gov/Feature/1783) ·
+  [Valles Marineris](https://planetarynames.wr.usgs.gov/Feature/6288) ·
+  [Hellas Planitia](https://planetarynames.wr.usgs.gov/Feature/2432) ·
+  [Utopia Planitia](https://planetarynames.wr.usgs.gov/Feature/6260) ·
+  [Jezero](https://planetarynames.wr.usgs.gov/Feature/14300) ·
+  [Gale](https://planetarynames.wr.usgs.gov/Feature/2071)
+- **Mars radius.** IAU 2000 equatorial radius.
+  [USGS projection reference](https://astrogeology.usgs.gov/docs/concepts/camera-geometry-and-projections/learning-about-map-projections/)
+- **Type.** Roboto Regular and Bold are bundled with their
+  [license](data/Roboto-LICENSE.txt).
+
+## Notes
+
+- **NULL and zero.** NULL means the density is unknown. Zero would be a
+  numerical estimate of zero organisms per square kilometre. The map uses
+  one global NULL status and contains no numerical organism-density layer.
+- **Print at actual size.** The exported PNG is 300 × 225 mm at 300 dpi
+  (3543 × 2657 px). The map keeps 10 mm side margins, and the bottom edge
+  is trimmed by 5 mm from the original layout.
+
+## Author
+
+María Victoria León Parra
