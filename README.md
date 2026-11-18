@@ -25,7 +25,8 @@ tutorials that inspired it.
 | 13 | Interactions | Cabo de Palos & La Manga | Python | [View project](./day13-interactions/) |
 | 14 | Borgesian map | Cartagena in 1799 | Python | [View project](./day14-Borgesian-map/) |
 | 15 | Inside out | The Shape of a Cave | Python | [View project](./day15-Inside-out/) |
-| 17 | Light and Dark | The Shape of a Cave | Python | [View project](./day17-light-and-dark/) |
+| 17 | Light and Dark | The Shape of a Cave | R | [View project](./day17-light-and-dark/) |
+| 18 | NULL | How Much Life Is on Mars? | Python | [View project](./day18-Null/) |
 
 This table will be updated as the challenge progresses.
 
