@@ -4,8 +4,6 @@
 
 Where do the photographs in the tutorial’s Tokyo sample concentrate, and what groups does DBSCAN identify?
 
-[Print PNG](outputs/day20-tokyo-through-photographs.png) · [Vector PDF](outputs/day20-tokyo-through-photographs.pdf) · [Executed notebook](day20_hexagons.ipynb) · [GeoPackage](outputs/tokyo_photographs.gpkg)
-
 ## Tools
 
 Python 3.11+, GeoPandas, scikit-learn, SciPy, Matplotlib and Jupyter. The print layout uses the bundled Roboto fonts.
