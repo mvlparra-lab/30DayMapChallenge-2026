@@ -27,6 +27,8 @@ tutorials that inspired it.
 | 15 | Inside out | The Shape of a Cave | Python | [View project](./day15-Inside-out/) |
 | 17 | Light and Dark | The Shape of a Cave | R | [View project](./day17-light-and-dark/) |
 | 18 | NULL | How Much Life Is on Mars? | Python | [View project](./day18-Null/) |
+| 20 | Hexagon | Tokyo Through Photographs | Python | [View project](./day20-hexagons/) |
+
 
 This table will be updated as the challenge progresses.
 
