@@ -28,7 +28,7 @@ tutorials that inspired it.
 | 17 | Light and Dark | The Shape of a Cave | R | [View project](./day17-light-and-dark/) |
 | 18 | NULL | How Much Life Is on Mars? | Python | [View project](./day18-Null/) |
 | 20 | Hexagon | Tokyo Through Photographs | Python | [View project](./day20-hexagons/) |
-
+| 21 | OpenStreetMap | Ávila Within the Walls | Python | [View project](./day21-OpenStreetMap/) |
 
 This table will be updated as the challenge progresses.
 
