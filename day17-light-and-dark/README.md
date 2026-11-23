@@ -1,12 +1,10 @@
 # Day 17 | Poland After Dark
 
-Light & dark · 30DayMapChallenge 2026
+#30DayMapChallenge 2026 · Light and Dark · María Victoria León Parra
 
 Wrocław, where I studied during my Erasmus, was the starting point for this
 map. The final view shows the distribution of nighttime radiance across
 Poland in the 2024 VIIRS annual composite.
-
-[Final map](outputs/day17-poland-after-dark.png) · [Preview](outputs/day17-poland-after-dark-preview.png)
 
 ## Tools
 
@@ -30,10 +28,10 @@ The bundled Roboto Regular and Bold fonts are used throughout the layout.
 5. Export the print PNG and preview from the same layout in
    [make_map.R](make_map.R).
 
-## Local data
+## Local data and reproduction
 
-The [VIIRS crop](data/viirs-2024-poland.tif), [country geometry](data/poland.geojson)
-and fonts are bundled in `data/`. Install the packages from CRAN in R.
+The `data/viirs-2024-poland.tif`, `data/poland.geojson`
+and fonts belong in `data/`. Restore any missing local inputs before rendering. Install the packages from CRAN in R.
 
 ```r
 install.packages(c("terra", "sf", "ggplot2", "ggspatial", "scales", "ragg", "systemfonts"))
@@ -96,9 +94,9 @@ Rscript --vanilla make_map.R data/viirs-2023-poland.tif 2023
   [Case study](https://milospopovic.net/case-studies/nightlight-ukraine/) ·
   [Video tutorial](https://www.youtube.com/watch?v=1wz3RrfGG-c)
 - **Type.** Roboto Regular and Bold are bundled with their
-  [license](data/Roboto-LICENSE.txt).
+  `data/Roboto-LICENSE.txt`.
 
-## Notes
+## Notes and limitations
 
 - VIIRS shows nighttime radiance across urban and rural areas at a scale of
   hundreds of metres. The legend year identifies the satellite observations.
@@ -110,6 +108,15 @@ Rscript --vanilla make_map.R data/viirs-2023-poland.tif 2023
   layout (1228 × 1370 px). Both renders matched the approved PNGs byte for byte
   in a clean R session.
 
+## Outputs
+
+- `outputs/day17-poland-after-dark.png` — Print PNG.
+- `outputs/day17-poland-after-dark-preview.png` — Preview PNG.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
+
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
