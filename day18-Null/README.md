@@ -1,12 +1,10 @@
 # Day 18 | How Much Life Is on Mars?
 
-NULL · #30DayMapChallenge 2026
+#30DayMapChallenge 2026 · NULL · María Victoria León Parra
 
 The map asks how many living organisms there are per square kilometre on
 Mars. No observations support a density estimate anywhere on the planet.
 The single legend entry applies to the entire Martian surface.
-
-[Final map](outputs/day18-null-mars.png)
 
 ## Tools
 
@@ -36,7 +34,7 @@ Bold fonts are used throughout the layout.
 
 ## Local data and reproduction
 
-The [toponyms CSV](data/mars-toponyms.csv) stores the catalogue centres,
+The `data/mars-toponyms.csv` stores the catalogue centres,
 Gazetteer feature IDs and label offsets in millimetres. The first run
 downloads MOLA relief into the GMT cache. Subsequent runs can reuse it.
 
@@ -51,6 +49,8 @@ python day18-null.py
 To reproduce the tutorial-resolution comparison, run
 `python day18-null.py --resolution 01d`. Run the command without the flag
 afterward to restore the 15 arc-minute output at the same path.
+
+Restore `data/mars-toponyms.csv` and the local Roboto fonts before rendering if those inputs are missing.
 
 ## Sources and inspiration
 
@@ -70,9 +70,9 @@ afterward to restore the 15 arc-minute output at the same path.
 - **Mars radius.** IAU 2000 equatorial radius.
   [USGS projection reference](https://astrogeology.usgs.gov/docs/concepts/camera-geometry-and-projections/learning-about-map-projections/)
 - **Type.** Roboto Regular and Bold are bundled with their
-  [license](data/Roboto-LICENSE.txt).
+  `data/Roboto-LICENSE.txt`.
 
-## Notes
+## Notes and limitations
 
 - **NULL and zero.** NULL means the density is unknown. Zero would be a
   numerical estimate of zero organisms per square kilometre. The map uses
@@ -81,6 +81,15 @@ afterward to restore the 15 arc-minute output at the same path.
   (3543 × 2657 px). The map keeps 10 mm side margins, and the bottom edge
   is trimmed by 5 mm from the original layout.
 
+## Outputs
+
+- `outputs/day18-null-mars.png` — Print PNG, 300 × 225 mm at 300 dpi.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
+
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
