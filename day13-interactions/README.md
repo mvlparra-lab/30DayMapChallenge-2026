@@ -1,4 +1,6 @@
-# Day 13 - Interactions | Cabo de Palos & La Manga
+# Day 13 | Cabo de Palos & La Manga
+
+#30DayMapChallenge 2026 · Interactions · María Victoria León Parra
 
 An interactive map for the #30DayMapChallenge 2026 comparing where restaurants, bars and pubs are mapped in Cabo de Palos and southern La Manga. Both maps start at the same scale, and a shared set of filters lets you compare the same categories side by side.
 
@@ -17,6 +19,10 @@ An interactive map for the #30DayMapChallenge 2026 comparing where restaurants, 
 3. Build two Folium maps with shared category filters. Click a marker to see the venue details or drag the divider to give either map more space.
 4. Export the interactive viewer as `index.html`.
 
+## Local data and reproduction
+
+The notebook retrieves the venue data from OpenStreetMap. An internet connection is required for the initial download. The generated HTML and other outputs are kept outside this repository.
+
 To regenerate the viewer, install the dependencies:
 
 ```bash
@@ -25,19 +31,24 @@ python -m pip install jupyter osmnx geopandas folium
 
 Open the notebook in this folder and run all cells in order.
 
-## Local data
-
-The notebook retrieves the venue data from OpenStreetMap. An internet connection is required for the initial download. The generated HTML and other outputs are kept outside this repository.
-
 ## Sources and inspiration
 
 - Data: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 - Inspiration: [Interactive POI Visualization in Python with OpenStreetMap Data](https://www.youtube.com/watch?v=SyOF6TWFnvA) by Milan Janosov
 
-## Notes
+## Notes and limitations
 
 The comparison covers the two selected study areas. OpenStreetMap coverage may vary between them, so the map shows recorded venues rather than a complete business directory.
+
+## Outputs
+
+- `index.html` — Side-by-side interactive comparison.
+
+Run the notebook to generate `index.html` locally.
 
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
