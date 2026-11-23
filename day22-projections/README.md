@@ -4,10 +4,6 @@
 
 How does the same world change when a map preserves area, preserves local angles, or puts the ocean at the center? The loop moves from Web Mercator through three equal-area projections to Spilhaus, then returns to Web Mercator.
 
-![One World, Five Perspectives in Spilhaus](outputs/day22-one-world-five-perspectives.png)
-
-[Looping GIF](outputs/day22-one-world-five-perspectives.gif) · [MP4](outputs/day22-one-world-five-perspectives.mp4) · [Still PNG](outputs/day22-one-world-five-perspectives.png)
-
 ## Tools
 
 Python 3.12, GeoPandas, Pyogrio, Shapely, NumPy, pyproj with PROJ 9.6 or newer, Pillow and FFmpeg. The layout uses the bundled Roboto Regular and Bold faces, as in Days 20 and 21.
