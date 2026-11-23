@@ -1,4 +1,6 @@
-# Day 02 - Lines | Augsburg through its streets
+# Day 02 | Augsburg through its streets
+
+#30DayMapChallenge 2026 · Lines · María Victoria León Parra
 
 Revisiting Augsburg after mapping driving times for Day 26 of
 the 2025 challenge, this time exploring its street network with Python.
@@ -19,7 +21,7 @@ Python, OSMnx, GeoPandas and Matplotlib.
 5. Style the streets and boundary, then add a north arrow and scale bar.
 6. Export a static PNG.
 
-## Local data
+## Local data and reproduction
 
 No local input files are required for the first run.
 An internet connection is needed to download the OpenStreetMap data.
@@ -36,7 +38,7 @@ the network again. Cached data is not included in this repository.
 - Data: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
 - Tutorial: [Visualizing Road Networks by Milan Janosov](https://milanjanosov.substack.com/p/milans-data-stories-016-visualizing).
 
-## Notes
+## Notes and limitations
 
 OpenStreetMap coverage may be incomplete. The network is retrieved
 using `network_type="all"` and does not imply access for all
@@ -49,9 +51,16 @@ slightly beyond the municipal boundary.
 Both layers are projected to EPSG:32632. The scale bar uses meters,
 and the north arrow indicates grid north.
 
+## Outputs
+
+- `output/day02_lines_augsburg.png` — Street network PNG.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
+
 ## Author
 
 María Victoria León Parra
 
 [Portfolio](https://vl-portfolio.lovable.app/) ·
-[Back to the challenge](../README.md)
+[Back to the challenge](../README.md) · [Back to challenge](../)
+
