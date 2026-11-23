@@ -1,5 +1,8 @@
 # Day 14 | Cartagena in 1799
 
+#30DayMapChallenge 2026 · Borgesian map · María Victoria León Parra
+
+The map aligns Juan José Ordovás’s 1799 plan of Cartagena with a photograph of the city model to compare the historic arsenal and its surroundings.
 
 ## Tools
 
@@ -13,7 +16,7 @@ Python, Jupyter, Pillow, NumPy, Matplotlib, PyMuPDF and fontTools.
 4. Crop the top of the model photograph to match the plan’s aspect ratio and align the two references.
 5. Export the PNG and PDF from the same layout. Verify the PDF dimensions and embedded Roboto Black font.
 
-## Local data
+## Local data and reproduction
 
 Install the dependencies, then open [day14_borgesian_map.ipynb](day14_borgesian_map.ipynb) from this day’s folder and use **Run All**.
 
@@ -21,7 +24,7 @@ Install the dependencies, then open [day14_borgesian_map.ipynb](day14_borgesian_
 python -m pip install -r requirements.txt
 ```
 
-The original Ordovás scan, model photograph, Roboto Black font and font license are included in `data/` for offline use.
+The notebook expects the original Ordovás scan, model photograph, Roboto Black font and font licence in `data/`. Download the inputs from the sources below or restore them from the local project before running the notebook offline.
 
 ## Sources and inspiration
 
@@ -30,15 +33,23 @@ The original Ordovás scan, model photograph, Roboto Black font and font license
 - **Model** — The Ayuntamiento de Cartagena documents the 1:700 model. The reference photograph is cropped from the top for the layout. The original is by P4K1T0, CC BY-SA 4.0. [Municipal documentation](https://www.cartagena.es/detalle_noticias.asp?id=37021) · [Photograph](https://commons.wikimedia.org/wiki/File:Cartagena_y_su_Arsenal_durante_el_siglo_XVIII_(20221102_122219).jpg) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - **Layout and type** — [Matplotlib’s Figure size in different units](https://matplotlib.org/stable/gallery/subplots_axes_and_figures/figure_size_units.html) and [Google’s Roboto Black](https://github.com/googlefonts/roboto/blob/main/src/hinted/Roboto-Black.ttf), Apache 2.0.
 
-## Notes
+## Notes and limitations
 
 - The transverse basin span is 297 px across 318 m, from (573, 835) to (870, 835), giving 0.9340 px/m. The longitudinal check is 493 px across 550 m, from (690, 502) to (690, 995), giving 0.8964 px/m. The 4.0% difference shows the sensitivity to shoreline interpretation, historical drafting and scan distortion.
 - The selected square is centred at (1630, 506) in source pixels. Its 196 m side spans about 183.06 source pixels on each side. The 1:700 ratio sets the nominal target paper scale. The crop has not been checked against physical measurements of the model. Source resolution limits fine detail.
-- **Print at 100% / Actual size.** The [PDF](output/day14_borgesian_map_print.pdf) is **300 × 410 mm**, with a **280 × 280 mm** map panel and **10 mm** left and right margins. The PDF embeds Roboto Black at weight 900.
-- The [PNG](linkedin.png) shares the PDF layout and aspect ratio at **3000 × 4100 pixels**. Its physical display size depends on the screen.
+- **Print at 100% / Actual size.** The `output/day14_borgesian_map_print.pdf` is **300 × 410 mm**, with a **280 × 280 mm** map panel and **10 mm** left and right margins. The PDF embeds Roboto Black at weight 900.
+- The `linkedin.png` shares the PDF layout and aspect ratio at **3000 × 4100 pixels**. Its physical display size depends on the screen.
+
+## Outputs
+
+- `output/day14_borgesian_map_print.pdf` — Print PDF, 300 × 410 mm.
+- `linkedin.png` — PNG, 3000 × 4100 px.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
 
 ## Author
 
 María Victoria León Parra
 
-[Portfolio](https://vl-portfolio.lovable.app/portfolio)
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
