@@ -1,4 +1,4 @@
-# Day 07 | A World of Forests 🌳
+# Day 07 | A World of Forests
 
 #30DayMapChallenge 2026 · 10 Minute Map · María Victoria León Parra
 
