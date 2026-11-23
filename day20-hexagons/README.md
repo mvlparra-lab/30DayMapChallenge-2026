@@ -4,6 +4,8 @@
 
 Where do the photographs in the tutorial’s Tokyo sample concentrate, and what groups does DBSCAN identify?
 
+[Print PNG](outputs/day20-tokyo-through-photographs.png) · [Vector PDF](outputs/day20-tokyo-through-photographs.pdf) · [Executed notebook](day20_hexagons.ipynb) · [GeoPackage](outputs/tokyo_photographs.gpkg)
+
 ## Tools
 
 Python 3.11+, GeoPandas, scikit-learn, SciPy, Matplotlib and Jupyter. The print layout uses the bundled Roboto fonts.
@@ -55,6 +57,13 @@ Counts describe sampled Flickr photographs. They cannot estimate tourists, visit
 - `outputs/day20-tokyo-through-photographs.png` and `.pdf` share a 300 × 300 mm layout with a 5 mm footer clearance and at least 10 mm margins for the other content. The PNG is 300 dpi. The PDF uses vector geometry and embedded fonts.
 - `outputs/tokyo_photographs.gpkg` stores the `photographs` (source row, cell ID, cluster label and role), `hexagon_counts`, `dbscan_footprints`, `dbscan_hexagon_outlines` and `land_context` layers in EPSG:6677.
 - `outputs/input_audit.json`, `point_pattern_summary.csv`, `dbscan_sensitivity.csv`, `dbscan_clusters.csv` and `hexagon_counts.csv` record data quality, the descriptive spatial measures, parameter comparison, cluster sizes and cell counts.
+
+## Author
+
+María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
 
 ## Author
 
