@@ -30,6 +30,7 @@ tutorials that inspired it.
 | 20 | Hexagon | Tokyo Through Photographs | Python | [View project](./day20-hexagons/) |
 | 21 | OpenStreetMap | Ávila Within the Walls | Python | [View project](./day21-OpenStreetMap/) |
 | 22 | Projections | One World, Five Perspectives | Python | [View project](./day22-projections/) |
+| 23 | Sense: Taste | Cádiz, a Meeting of Flavours | R | [View project](./day23-senses-taste/) |
 
 This table will be updated as the challenge progresses.
 
