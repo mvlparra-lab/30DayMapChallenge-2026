@@ -1,4 +1,4 @@
-# Day 22 – Projections | One World, Five Perspectives
+# Day 22 | One World, Five Perspectives
 
 #30DayMapChallenge 2026 · Projections · María Victoria León Parra
 
@@ -27,7 +27,7 @@ From this day's directory in a Python 3.12 virtual environment, run:
 
 ```sh
 python -m pip install -r requirements.txt
-python make_map.py
+python day22-projections.py
 ```
 
 The script prepares the five panels before encoding. It caches those panels in the operating system's temporary directory and reuses them when the script, source archive and projection library versions match.
@@ -57,3 +57,6 @@ The script prepares the five panels before encoding. It caches those panels in t
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
