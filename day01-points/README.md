@@ -1,4 +1,4 @@
-# Day 01 | Lighthouses of Spain 🔅
+# Day 01 | Lighthouses of Spain
 
 #30DayMapChallenge 2026 · Points · María Victoria León Parra
 
