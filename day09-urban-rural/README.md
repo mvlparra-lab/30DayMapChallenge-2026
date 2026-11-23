@@ -1,4 +1,6 @@
-# Day 09 - Urban-rural | Baena, Town & Countryside
+# Day 09 | Baena, Town & Countryside
+
+#30DayMapChallenge 2026 · Urban-rural · María Victoria León Parra
 
 For the Urban-rural theme, I wanted to see how Baena, in Córdoba, Spain, meets the countryside around it. The map shows the urban area, the buildings within and around it, and the surrounding agricultural land.
 
@@ -14,6 +16,12 @@ For the Urban-rural theme, I wanted to see how Baena, in Córdoba, Spain, meets 
 3. Run [`day09_baena.py`](./day09_baena.py) to calculate the percentage of each 100 × 100 m cell covered by buildings. Count overlapping footprints only once.
 4. Load the resulting coverage layer in QGIS for the inset, then compose and export the main map and inset together.
 
+## Local data and reproduction
+
+The script expects `baena_catastro.gpkg` in the working directory, containing the INSPIRE BU **Building** footprints for Baena. If the GeoPackage contains several candidate layers, specify the footprint layer with `--layer LAYER_NAME`.
+
+The script recreates the original grid by default. To reuse the grid from the QGIS project, run `python day09_baena.py --grid baena.gpkg`. The output is `baena_coverage_catastro.gpkg`, with the layer `building_coverage_catastro_100m`. The SIGPAC layer is used separately in QGIS for the main map.
+
 Run these commands from `day09-urban-rural/`:
 
 ```sh
@@ -21,25 +29,27 @@ python -m pip install "geopandas>=1" pyogrio
 python day09_baena.py
 ```
 
-## Local data
-
-The script expects `baena_catastro.gpkg` in the working directory, containing the INSPIRE BU **Building** footprints for Baena. If the GeoPackage contains several candidate layers, specify the footprint layer with `--layer LAYER_NAME`.
-
-The script recreates the original grid by default. To reuse the grid from the QGIS project, run `python day09_baena.py --grid baena.gpkg`. The output is `baena_coverage_catastro.gpkg`, with the layer `building_coverage_catastro_100m`. The SIGPAC layer is used separately in QGIS for the main map.
-
 ## Sources and inspiration
 
 - **Land use:** [SIGPAC 2026, Junta de Andalucía](https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac/visor/paginas/sigpac-descarga-informacion-geografica-shapes-provincias.html), © Junta de Andalucía.
 - **Building footprints:** [INSPIRE Buildings (BU), Dirección General del Catastro](https://www.catastro.hacienda.gob.es/webinspire/).
 - **Tutorial:** [How to Calculate Coverage and Floor Area Ratio in Python](https://www.spatialworkflow.io/building-coverage-far-python/) by Spatial Workflow.
 
-## Notes
+## Notes and limitations
 
 - Light terracotta marks the urban area, dark terracotta shows individual building footprints, and olive green shows all mapped agricultural land. Grey combines other uses and areas without data.
 - The inset measures the share of each cell covered by building footprints, not population density or the extent of the urban area.
+
+## Outputs
+
+- `baena_coverage_catastro.gpkg` — Building coverage for the QGIS inset.
+- Complete and export the map in QGIS using the generated data. The final map is not bundled in this checkout.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
 
 ## Author
 
 María Victoria León Parra
 
 [Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
