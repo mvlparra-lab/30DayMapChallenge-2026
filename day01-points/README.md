@@ -1,4 +1,6 @@
-# Day 01 - Points | Lighthouses of Spain 🔅
+# Day 01 | Lighthouses of Spain 🔅
+
+#30DayMapChallenge 2026 · Points · María Victoria León Parra
 
 Revisiting my first map from the 2025 challenge, this time with
 Python and animated lights.
@@ -20,7 +22,7 @@ Python, OSMnx, GeoPandas, Rasterio and Matplotlib.
 5. Recreate the background style and add a Canary Islands inset.
 6. Export a static PNG and an animated GIF.
 
-## Local data
+## Local data and reproduction
 
 The notebook requires these files in a `data/` folder:
 
@@ -37,7 +39,7 @@ obtained via OpenTopography.
 - Elevation: Copernicus DEM via [OpenTopography](https://opentopography.org/).
 - Tutorial: [Lighthouse animation by Miloš Popović](https://github.com/milos-agathon/lighthouse_animation).
 
-## Notes
+## Notes and limitations
 
 The light pulses are illustrative and do not represent actual
 lighthouse flashing patterns. OpenStreetMap coverage may be incomplete.
@@ -45,9 +47,16 @@ lighthouse flashing patterns. OpenStreetMap coverage may be incomplete.
 The background is an approximate Python reconstruction of the
 2025 QGIS style.
 
+## Outputs
+
+- `outputs/day01_lighthouses_spain.png` — Still PNG.
+- `outputs/day01_lighthouses_spain.gif` — Animated GIF.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
+
 ## Author
 
 María Victoria León Parra
 
 [Portfolio](https://vl-portfolio.lovable.app/) ·
-[Back to the challenge](../README.md)
+[Back to the challenge](../README.md) · [Back to challenge](../)
