@@ -1,8 +1,8 @@
-# Day 03 - Polygons | Olive Landscapes of Córdoba
+# Day 03 | Olive Landscapes of Córdoba
+
+#30DayMapChallenge 2026 · Polygons · María Victoria León Parra
 
 Exploring Córdoba’s connection to olive growing, a landscape linked to my family, through a choropleth map showing olive-growing area as a percentage of each municipality’s total area.
-
-![Olive Landscapes of Córdoba](outputs/day03_polygons_olive_cordoba.png)
 
 ## Tools
 
@@ -19,7 +19,7 @@ Python, GeoPandas, Pandas, Matplotlib, Requests and xlrd.
 7. Design the choropleth with a custom green gradient, grid north arrow and 20 km scale bar.
 8. Export the map as a PNG at 300 dpi.
 
-## Local data
+## Local data and reproduction
 
 The notebook downloads the source datasets into `data/` and reuses existing files when available.
 
@@ -37,7 +37,7 @@ pip install requests pandas geopandas matplotlib xlrd
 - **Crop statistics:** [Junta de Andalucía, municipal crop areas, 2023](https://www.juntadeandalucia.es/servicios/estadistica-cartografia/actividad/detalle/71175/473605.html). Córdoba workbook, GENERAL sheet, Olivar category (1400).
 - **Tutorial:** [Let’s make a map! Using GeoPandas and Matplotlib](https://github.com/bendoesdata/make-a-map-geopandas) by Ben Dexter Cooley.
 
-## Notes
+## Notes and limitations
 
 - All 77 municipalities were matched to agricultural records.
 - Calculated olive coverage ranges from approximately 0.1% to 93.6%, with the highest percentage in Nueva Carteya.
@@ -47,8 +47,15 @@ pip install requests pandas geopandas matplotlib xlrd
 - Municipal areas calculated from boundary geometries may differ slightly from published statistical areas.
 - The arrow indicates grid north.
 
+## Outputs
+
+- `outputs/day03_polygons_olive_cordoba.png` — Olive-growing area PNG.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
+
 ## Author
 
 María Victoria León Parra
 
-[Portfolio](https://vl-portfolio.lovable.app/) · [Back to the challenge](../README.md)
+[Portfolio](https://vl-portfolio.lovable.app/) · [Back to the challenge](../README.md) · [Back to challenge](../)
+
