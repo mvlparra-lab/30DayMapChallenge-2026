@@ -6,10 +6,6 @@ Cádiz’s Atlantic port linked Andalusia with the Americas and made the city a 
 
 The centered title, warm paper background, Roboto typography and challenge footer carry the collection’s print layout into an interactive page. Days 20–22 supplied the layout and folder references.
 
-[Open the interactive Leaflet map](outputs/day23-cadiz-a-meeting-of-flavours.html)
-
-[LinkedIn cover PNG](outputs/day23-cadiz-a-meeting-of-flavours-cover.png) · [Looping GIF preview](outputs/day23-cadiz-a-meeting-of-flavours-preview.gif)
-
 ## Tools
 
 R 4.6.2, Leaflet, sf, dplyr, glue, htmltools, htmlwidgets and Pandoc for the map. Node.js, Chrome or Chromium, and Python with Pillow for the social exports.
