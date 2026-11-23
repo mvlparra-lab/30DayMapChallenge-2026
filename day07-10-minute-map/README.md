@@ -1,4 +1,6 @@
-# Day 07 - 10 Minute Map | A World of Forests 🌳
+# Day 07 | A World of Forests 🌳
+
+#30DayMapChallenge 2026 · 10 Minute Map · María Victoria León Parra
 
 How much of each country’s land area is covered by forests? This map shows the percentage for 2024, with darker greens indicating a higher share of forest area.
 
@@ -14,7 +16,7 @@ Python, pandas, GeoPandas, Matplotlib and pyproj.
 4. Draw the map in the Robinson projection with a green colour scale, north arrow and scale bar.
 5. Export the map as a PNG at 300 dpi.
 
-## Local data
+## Local data and reproduction
 
 Keep `API_AG.LND.FRST.ZS_DS2_en_csv_v2_811.csv` in the same folder as [`day07_10_minute_map.ipynb`](./day07_10_minute_map.ipynb).
 
@@ -26,15 +28,22 @@ Run the notebook cells in order. An internet connection is needed to download th
 - **Country boundaries:** [Natural Earth, Admin 0 Countries](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/).
 - **Tutorial:** [Mapping Global Coffee in 10 Minutes](https://www.youtube.com/watch?v=a3CB5x3XQmg) by Milan Janosov. I adapted his Python workflow to map forests instead of coffee.
 
-## Notes
+## Notes and limitations
 
 I studied the tutorial before starting the timer. The first version took **9 minutes and 28.63 seconds**. I refined the colours and layout afterwards.
 
 The join matched 168 countries and territories. Grey indicates no data. The colours show national percentages, not the locations of individual forests. The scale bar is calibrated at the equator.
+
+## Outputs
+
+- `Day07_A_World_of_Forests.png` — Forest cover PNG at 300 dpi.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs.
 
 ## Author
 
 María Victoria León Parra
 
 [Portfolio](https://vl-portfolio.lovable.app/) ·
-[Back to the challenge](../README.md)
+[Back to the challenge](../README.md) · [Back to challenge](../)
+
