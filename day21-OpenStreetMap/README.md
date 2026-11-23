@@ -1,14 +1,8 @@
-# Day 21 – OpenStreetMap | Ávila Within the Walls
+# Day 21 | Ávila Within the Walls
 
 #30DayMapChallenge 2026 · OpenStreetMap · María Victoria León Parra
 
 Ávila’s medieval wall encloses a compact historic centre in Castilla y León, Spain. This illustrated cutout follows the enclosure, with the wall and its towers forming the silhouette against the white page.
-
-![Ávila Within the Walls](outputs/day21-avila-within-the-walls.png)
-
-[Print PNG](outputs/day21-avila-within-the-walls.png) · [Vector PDF](outputs/day21-avila-within-the-walls.pdf)
-
-[Previous rectangular PNG](outputs/day21-avila-within-the-walls-rectangular.png) · [Previous rectangular PDF](outputs/day21-avila-within-the-walls-rectangular.pdf)
 
 ## Tools
 
@@ -29,12 +23,12 @@ From this day’s directory, in an activated Python 3.12 virtual environment, ru
 ```sh
 python -m pip install -r requirements.txt
 python -m pip install --no-deps prettymaps==1.4.2
-python make_map.py
+python day21-OpenStreetMap.py
 ```
 
 The second command bypasses the published Prettymaps constraints on NumPy and OSMnx. The requirements file supplies the Python 3.12 dependencies used by the map, including OSMnx 2 for reading the cached XML extract.
 
-The compressed `data/avila_*.osm.bz2` is the bundled snapshot for the default bbox. It makes routine runs offline. If the cache for the configured bbox is missing, the script fetches and stores a fresh extract. The download bbox, enclosure buffer, view padding, street widths, palette, strokes and export formats are grouped near the top of `make_map.py`.
+The compressed `data/avila_*.osm.bz2` is the bundled snapshot for the default bbox. It makes routine runs offline. If the cache for the configured bbox is missing, the script fetches and stores a fresh extract. The download bbox, enclosure buffer, view padding, street widths, palette, strokes and export formats are grouped near the top of `day21-OpenStreetMap.py`.
 
 ## Sources and inspiration
 
@@ -56,3 +50,6 @@ The compressed `data/avila_*.osm.bz2` is the bundled snapshot for the default bb
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
+
