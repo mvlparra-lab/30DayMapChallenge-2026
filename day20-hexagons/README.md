@@ -1,4 +1,4 @@
-# Day 20 – Hexagons | Tokyo Through Photographs
+# Day 20 | Tokyo Through Photographs
 
 #30DayMapChallenge 2026 · Hexagons · María Victoria León Parra
 
@@ -59,3 +59,5 @@ Counts describe sampled Flickr photographs. They cannot estimate tourists, visit
 ## Author
 
 María Victoria León Parra
+
+[Portfolio](https://vl-portfolio.lovable.app/portfolio) · [Back to challenge](../)
