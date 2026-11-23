@@ -1,8 +1,8 @@
-# Day 10 - Prompting only | Augsburg, Where Water Runs
+# Day 10 | Augsburg, Where Water Runs
+
+#30DayMapChallenge 2026 · Prompting only · María Victoria León Parra
 
 Tracing how water from the Lech enters Augsburg’s canals at Hochablass and reaches the historic Lechviertel. The map follows the Hauptstadtbach, Kaufbach and Schwallech to the Mittlerer Lech and Hinterer Lech branches.
-
-[View the refined map](output/day10_prompting_only_augsburg_refined.png) · [View the original draft](output/day10_prompting_only_augsburg_draft.png)
 
 ## Tools
 
@@ -18,7 +18,7 @@ Python, Jupyter, Requests, GeoPandas, Shapely and Matplotlib.
 6. Draw the route and intake in blue, with the Lech and surrounding waterways in softer tones. Add flow arrows on two verified sections, labels, a legend, grid north and a 1 km scale bar.
 7. Export a square PNG at 300 dpi.
 
-## Local data
+## Local data and reproduction
 
 Install the dependencies, then open [day10_prompting_only_augsburg.ipynb](day10_prompting_only_augsburg.ipynb) from this day’s folder and use **Run All**.
 
@@ -41,7 +41,7 @@ The prompts for data preparation, the draft map and its refinement are saved in 
 - Augsburg’s World Heritage nomination dossier describes the route via Hauptstadtbach, Kaufbach and Schwallech to the Mittlerer and Hinterer Lech branches. [Nomination dossier, p. 139](https://wassersystem-augsburg.de/sites/default/files/2022-11/1_stadt_augsburg_nomination_dossier_0.pdf#page=139)
 - The prompting workflow adapts Tyson Swetnam’s tutorial. [Vibe coding a Public Health Map](https://tyson-swetnam.github.io/intro-gpt/tutorials/publichealth/gis/)
 
-## Notes
+## Notes and limitations
 
 - Vorderer Lech remains in the context layer. The city identifies the Lochbach as its supply, with a separate diversion at Lech barrage 22.
 - Context includes waterways outside the selected route, including some that also receive Hochablass water.
@@ -49,8 +49,15 @@ The prompts for data preparation, the draft map and its refinement are saved in 
 - The route retains the original OpenStreetMap names and tunnel tags. The `route_reach` field uses the municipal spelling `Schwallech` for ways tagged `Schwalllech` in OpenStreetMap.
 - The layers represent mapped centrelines and their connections within the study area. OpenStreetMap coverage may be incomplete.
 
+## Outputs
+
+- `output/day10_prompting_only_augsburg_refined.png` — Refined map at 3000 × 3000 px.
+- `output/day10_prompting_only_augsburg_draft.png` — Original draft from the initial prompting workflow.
+
+These files are not all present in this checkout. Use the reproduction steps above to regenerate the available outputs. The original draft requires the original prompting workflow.
+
 ## Author
 
 María Victoria León Parra
 
-[Portfolio](https://vl-portfolio.lovable.app/) · [Back to the challenge](../README.md)
+[Portfolio](https://vl-portfolio.lovable.app/) · [Back to the challenge](../README.md) · [Back to challenge](../)
