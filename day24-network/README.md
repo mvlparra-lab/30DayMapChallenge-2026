@@ -4,10 +4,6 @@
 
 The street network of Jaén, Spain, links the historic centre, the surrounding neighbourhoods and the main approaches to the city. This map shows which street segments lie on the most shortest paths by distance across that network.
 
-![The Streets That Connect Jaén](outputs/day24-the-streets-that-connect-jaen.png)
-
-[Print PNG](outputs/day24-the-streets-that-connect-jaen.png) · [Vector PDF](outputs/day24-the-streets-that-connect-jaen.pdf) · [GeoPackage](outputs/day24-the-streets-that-connect-jaen.gpkg)
-
 ## Tools
 
 Python 3.12, OSMnx, NetworkX, GeoPandas, NumPy, Matplotlib, Shapely, pyproj and Pyogrio. The pinned versions are in `requirements.txt`. The print layout uses the bundled Roboto Regular and Bold faces and follows Days 20 and 21 for page size, margins, typography and exports.
