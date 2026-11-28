@@ -33,6 +33,7 @@ tutorials that inspired it.
 | 23 | Sense: Taste | Cádiz, a Meeting of Flavours | R | [View project](./day23-senses-taste/) |
 | 24 | Network | The Streets That Connect Jaén | Python | [View project](./day24-network/) |
 | 25 | Is this a map? | Bruges, Drawn to Water | Python | [View project](./day25-is-this-a-map/) |
+| 28 | Senses: Feeling | Cádiz, Feeling the Heat | R | [View project](./day28-senses-feeling/) |
 
 This table will be updated as the challenge progresses.
 
